@@ -14,13 +14,45 @@
 <script src="https://use.fontawesome.com/38c0fa8ae6.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <link href="css/main.css" rel="stylesheet">
+    
+    <head>
+        <style>
+            .w3-dropdown-content .nav-item {
+                height: 5vh;
+                transition: all 0.6s ease;
+                
+            }
+            
+            .nav-item:hover a {
+                text-decoration: none;
+            }
+            
+            .w3-dropdown-hover:hover a  {
+                text-decoration: none;
+            }
+            
+            .w3-dropdown-content .nav-item:hover a {
+                text-decoration: none;
+            } 
+            
+            .w3-dropdown-content .nav-item a {
+                height: 5vh;
+                padding: 0;
+                margin: 0;
+                line-height: 10pt;
+            }
+        
+        
+        </style>
+    
+    </head>
 
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-bar-block  w3-animate-left w3-text-grey w3-collapse w3-top w3-center  " style="z-index:3;width:300px;font-weight:bold;box-shadow: 6px 0px 10px rgba(0,0,0,0.5);border: none;overflow: hidden;" id="mySidebar" ><br>
-        <h3 class="w3-padding-16 w3-center" style="margin-top: 20%;"><a href="#pagetop" onclick="w3_close()" class="w3-bar-item w3-button"><b>鄒凱宇</b></a> </h3>
+        <h3 class="w3-padding-12 w3-center js-scroll-trigger" style="margin-top: 20%;"><a href="#pagetop" onclick="w3_close()" class="w3-bar-item w3-button"><b>鄒凱宇</b></a> </h3>
         <img src="assets/self.jpg" style="" class="meimg">
         <ul class="navbar-nav" id="navbar">
             
@@ -32,6 +64,7 @@
                 <button class="w3-button"><a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button js-scroll-trigger">PORTFOLIO</a></button>
                 <div class="w3-dropdown-content ">
                     <li class="nav-item "><a href="#photography" onclick="w3_close()" class="w3-bar-item w3-button js-scroll-trigger">攝影</a></li>
+                    <li class="nav-item "><a href="#script" onclick="w3_close()" class="w3-bar-item w3-button js-scroll-trigger">編劇</a></li>
                     <li class="nav-item "><a href="#design" onclick="w3_close()" class="w3-bar-item w3-button js-scroll-trigger">設計繪圖</a> </li>
                     <li class="nav-item "><a href="#events" onclick="w3_close()" class="w3-bar-item w3-button js-scroll-trigger">活動經驗</a> </li>
                 </div>
@@ -164,7 +197,9 @@
                     <div class="w3-container w3-padding-small w3-center w3-grey" style="width:48%">48%</div>
                 </div>
 
-                <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom" href="/assets/portfolio.pdf" download="履歷" target="_blank">Download Resume</button></p>
+                <form method="get" action="/assets/portfolio.pdf" target="_blank">
+                    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom"  type="submit">Download Resume</button>
+                </form>
                 <hr class="w3-opacity">
 
 
@@ -188,15 +223,16 @@
                     <li class="w3-padding-6 w3-opacity w3-hover-opacity-off" style="border-bottom: none;border-left: 2px solid #ddd">2020 水保局農村好物頒獎典禮</li>
                     <li class="w3-padding-6 w3-opacity w3-hover-opacity-off" style="border-bottom: none;border-left: 2px solid #ddd">教育部 USR 線上展微電影比賽 場域探勘組 最佳社影獎</li>
                     <li class="w3-padding-6 w3-opacity w3-hover-opacity-off" style="border-bottom: none;border-left: 2px solid #ddd">2020九份青雲殿神農氏專曲企劃</li>
-                    <li class="w3-padding-6 w3-opacity w3-hover-opacity-off" style="border-bottom: none;border-left: 2px solid #ddd">第一屆生傳畢業製作總召-藝術總監</li>
+                    <li class="w3-padding-6 w3-opacity w3-hover-opacity-off" style="border-bottom: none;border-left: 2px solid #ddd">第一屆生傳畢業製作總召-藝術總監兼官網設計</li>
+                    <li class="w3-padding-6 w3-opacity w3-hover-opacity-off" style="border-bottom: none;border-left: 2px solid #ddd">《味 Way》微電影編劇兼劇照師</li>
                 </ul>
             </div>
         </div>
 
         <div class="w3-row w3-center w3-dark-grey w3-padding-16">
             <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">4+</span><br>
-                信任夥伴
+                <span class="w3-xlarge">50+</span><br>
+                成果作品
             </div>
             <div class="w3-quarter w3-section">
                 <span class="w3-xlarge">16+</span><br>
@@ -213,7 +249,7 @@
         </div>
 
         <div class="w3-content w3-container text-center" style="margin: 0px;padding: 0px;">
-            <!-- 隱藏評價-->
+            <!-- 隱藏評價
             <button class="" type="button" data-toggle="collapse" data-target="#comment" aria-controls="#comment" aria-expanded="false" aria-label="Toggle navigation" style="height: 100px;width: 100%;padding: 0px;margin: 0px;font-size: 150%;border: none;background-color:rgba(0,0,0,0.3);cursor: default;" disabled>他人評價(準備中)</button>
             <div class="collapse " id="comment" style="">
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -230,6 +266,8 @@
                     <p>No one is better than Jane Doe.</p><br>
                 </ul>
             </div>
+            
+            -->
 
 
 
@@ -244,7 +282,7 @@
         <!-- Second Parallax Image with Portfolio Text -->
         <div class="bgimg-2 w3-display-container w3-opacity-min" style="background-image: url(assets/pho/darkforest.jpg);background-attachment: fixed;">
             <div class="w3-display-middle">
-                <span class="w3-xxlarge w3-text-white w3-wide shadow">攝影/編劇</span>
+                <span class="w3-xxlarge w3-text-white w3-wide shadow">攝影</span>
             </div>
         </div>
 
@@ -267,10 +305,7 @@
                 </div>
 
                 <div class="w3-col m3">
-                    <a target="_blank" href="https://www.youtube.com/watch?v=i1IhEc7NJ3g">
-                        <img src="assets/pho/USR.png" style="width:100%;height: 139px;max-height: 100%; object-fit: cover;outline: 2px solid #58B2DC;"  class="w3-hover-opacity" alt="NTU USR MAKASKAS">
-                    </a>
-                    
+                    <img src="assets/pho/cook.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="兄妹煮飯">
                 </div>
             </div>
 
@@ -322,6 +357,86 @@
                 <img id="img01" class="w3-image">
                 <p id="caption" class="w3-opacity w3-large"></p>
             </div>
+        </div>
+        
+        <!-- Second Parallax Image with Portfolio Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" style="background-image: url(assets/pho/zhouxiao.jpg);background-attachment: fixed;">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-white w3-wide shadow">編劇/腳本</span>
+            </div>
+        </div>
+        
+        <div class="w3-content w3-container w3-padding-64 text-center" id="script">
+            <h3 class="w3-center">用故事創造生活</h3>
+            <p class="w3-center"><em> Click on the images to see the videos</em></p><br>
+            
+            <div class="mx-auto col-12">
+                <h4 style="margin-bottom:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">【MAKASKAS】<br>2020 USR Online Expo微電影參展影片</h4>
+                <iframe class="w3-hover-shadow my-5" style="max-width: 100%" width="560" height="315" src="https://www.youtube.com/embed/i1IhEc7NJ3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p style="margin-top:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">
+                    2020 教育部USR線上展 場域探勘組 最佳社影獎<br>
+                    青春有影2020大學盃 微電影徵件活動行銷組金獎<br>
+                    編劇、田野調查、攝影協助
+
+                </p>
+            </div>
+            
+            <div class="mx-auto col-12">
+                <h4 style="margin-bottom:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">《味 Way》2021 生傳畢製微電影</h4>
+                <iframe class="w3-hover-shadow my-5" style="max-width: 100%" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FNTUBICD.GPExpo%2Fvideos%2F1529026867304268%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                <p style="margin-top:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">
+                    2021 生傳畢製 One-Shot微電影劇組<br>
+                    編劇 / 劇照師
+                </p>
+            </div>
+            
+            <div class="mx-auto col-12">
+                <h4 style="margin-bottom:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">2021 生傳畢製形象片</h4>
+                <iframe class="w3-hover-shadow my-5" style="max-width: 100%" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FNTUBICD.GPExpo%2Fvideos%2F1187702938326070%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                <p style="margin-top:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">
+                    編劇
+                </p>
+            </div>
+            
+            
+            
+            <div class="mx-auto col-12">
+                <h4 style="margin-bottom:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">《珍奶女孩》2020校園鑫馬獎</h4>
+                <iframe class="w3-hover-shadow my-5" width="560" height="315" style="max-width: 100%" src="https://www.youtube.com/embed/fFdKK487ulQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p style="margin-top:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">
+                    台灣大學 第三名 <br>
+                    編劇腳本／收音
+                </p>
+            </div>
+            
+            <div class="mx-auto col-12">
+                <h4 style="margin-bottom:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">台灣艾爾新品宣傳</h4>
+                <iframe class="w3-hover-shadow my-5" style="max-width: 100%" src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Ftaiwanale%2Fvideos%2F1326504131032949%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                <p style="margin-top:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">
+                    攝影 / 腳本 / 剪輯
+                </p>
+            </div>
+            
+            <div class="mx-auto col-12">
+                <h4 style="margin-bottom:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">《宜蘭生活博物館 - 友善農業與里山倡議》</h4>
+                <iframe class="w3-hover-shadow my-5" style="max-width: 100%" width="560" height="315" src="https://www.youtube.com/embed/GKyWPDSQlHE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p style="margin-top:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">
+                    課程小組作業 <br>
+                    攝影 / 腳本 / 剪輯 / 採訪
+                </p>
+            </div>
+            
+            <div class="mx-auto col-12">
+                <h4 style="margin-bottom:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">精釀台灣</h4>
+                <iframe class="w3-hover-shadow my-5" width="560" height="315" src="https://www.youtube.com/embed/Z666gtRnIM8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p style="margin-top:-2rem;text-align: left;width: 560px;max-width: 100%" class="mx-auto">
+                    課程專題作業<br>
+                    編劇腳本 / 採訪
+                </p>
+            </div>
+            
+            
+            
         </div>
 
         <!-- Second Parallax Image with Portfolio Text -->
@@ -419,17 +534,56 @@
 
         <div class="w3-content w3-container w3-padding-64">
             <h3 class="w3-center">嘗試新的冒險</h3>
-            <p class="w3-center"><em> 點幻燈片看詳細成果</em></p>
+            <p class="w3-center"><em> 點擊查看詳細內容</em></p>
+            <hr>
 
             <!-- Photography Start -->
             <div id="" class="">
+
+        <!--- Cards -->
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-4">
+                    <div class="w3-card mycard">
+                        <img class="card-img-top" src="assets/pho/bicd.png">
+                        <div class="card-body">
+                            <h4 class="card-tittle">生傳系畢業製作</h4>
+                            <p class="card-text">生傳系第一屆畢業製作，在4/30~5/2於花博展出，橫跨媒體與食農帶來嶄新體驗</p>
+                            <a href="http://www.expo.bicd.ntu.edu.tw/" class="btn btn-primary mybtn" target="_blank">看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="w3-card mycard">
+                        <img class="card-img-top" src="assets/pho/game.jpg">
+                        <div class="card-body">
+                            <h4 class="card-tittle">我與遊戲製作</h4>
+                            <p class="card-text">遊戲是一種很有魔力的媒介。從概念發想、玩法、文案、到視覺設計</p>
+                            <a href="https://drive.google.com/drive/folders/1lwwIRoLcokgn_Lwwl-IPj2GMdMLB_DJ6?usp=sharing" class="btn btn-primary mybtn" target="_blank">看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="w3-card mycard">
+                        <img class="card-img-top" src="assets/pho/veda-logo.jpg">
+                        <div class="card-body">
+                            <h4 class="card-tittle">實習那段日子</h4>
+                            <p class="card-text">VEDA頤德國際 數位行銷實習生，負責社群管理、公關監控、文案與圖素設計等 </p>
+                            <a type="button" href="https://drive.google.com/drive/folders/1WYdsbUIvvFkplfTovZdPtf4-WdSzyD4N?usp=sharing" class="btn btn-primary mybtn" target="_blank">看更多</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <hr>
+        </div>
                 <!--- Two Column Section -->
                 <div class="container-fluid padding">
                     <div class="row ">
                         <div class="col-lg-4 mb-4 my-lg-auto" id="row4">
                             <h2 class="text-dark font-weight-bold mb-3 ml-5">活動策畫與協辦</h2>
                             <p class="mb-4 ml-5">參加校內、校外等大小專案<br>
-                                從行銷企劃到遊戲設計
+                                從行銷企劃到校園活動
                             </p>
                             <br>
                             <a href="https://drive.google.com/drive/folders/1VFwqzl0RYWxxzbZ1pU05Q85e-ReHv8Kl?usp=sharing" target="_blank" class="btn btn-primary btn-lg ml-5 mybtn">Learn More</a>
@@ -440,7 +594,7 @@
 
                                 <!-- Full-width images with number and caption text -->
                                 <div class="mySlides fade">
-                                    <div class="numbertext">1 / 3</div>
+                                    <div class="numbertext">1 / 5</div>
                                     <a target="_blank" href="https://www.facebook.com/216428085799392/videos/691449964757183/?__tn__=%2CO-R">
                                         <img  src="assets/mar/live.jpg" style="width:100%;" >
                                     </a>
@@ -449,8 +603,8 @@
                                 </div>
 
                                 <div class="mySlides fade">
-                                    <div class="numbertext">2 / 3</div>
-                                    <a target="_blank" href="https://drive.google.com/file/d/1DUhYT7YGcJZXwA3C6EyeyRqEQuaSQYmy/view?usp=sharing">
+                                    <div class="numbertext">2 / 5</div>
+                                    <a target="_blank" href="https://drive.google.com/drive/folders/1DXlWf0r7v3nEOtRjNmW_h9o6JTDGcy_O?usp=sharing">
                                         <img src="assets/mar/roshan.PNG" style="width:100%">
                                     </a>
                                     
@@ -458,12 +612,28 @@
                                 </div>
 
                                 <div class="mySlides fade">
-                                    <div class="numbertext">3 / 3</div>
+                                    <div class="numbertext">3 / 5</div>
                                     <a target="_blank" href="https://drive.google.com/file/d/1qdKNapZcUqDyDV_6NCIByGWTgWoeUxSs/view?usp=sharing">
                                         <img src="assets/mar/report.PNG" style="width:100%">
                                     </a>
                                     
                                     <div class="text">麻豆農會IMC整合行銷企劃</div>
+                                </div>
+                                <div class="mySlides fade">
+                                    <div class="numbertext">4 / 5</div>
+                                    <a target="_blank" href="https://drive.google.com/drive/folders/14KP24tg7UF-C9k3wtXybVXz8V-tFokYx?usp=sharing">
+                                        <img src="assets/mar/sunmai.png" style="width:100%">
+                                    </a>
+                                    
+                                    <div class="text">金色三麥畢業季校園活動</div>
+                                </div>
+                                <div class="mySlides fade">
+                                    <div class="numbertext">5 / 5</div>
+                                    <a target="_blank" href="https://drive.google.com/drive/folders/1l0Kc3zjD6zep39yFvDehbSAPLQmc5eMY?usp=sharing">
+                                        <img src="assets/des/phantastic.JPG" style="width:100%">
+                                    </a>
+                                    
+                                    <div class="text">台大師大十系舞會</div>
                                 </div>
 
                                 <!-- Next and previous buttons -->
@@ -477,6 +647,8 @@
                                 <span class="dot" onclick="currentSlide(1)"></span>
                                 <span class="dot" onclick="currentSlide(2)"></span>
                                 <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
                             </div>
 
                         </div>
@@ -495,53 +667,7 @@
             </div>
         </div>
 
-        <!--- Meet the team -->
-        <div class="container-fluid padding">
-            <div class="row welcome text-center">
-                <div class="col-12">
-                    <h1>參與團隊</h1>
-                </div>
-                <hr>
-            </div>
-        </div>
-
-
-        <!--- Cards -->
-        <div class="container-fluid padding">
-            <div class="row padding">
-                <div class="col-md-4">
-                    <div class="w3-card mycard">
-                        <img class="card-img-top" src="assets/team1.png">
-                        <div class="card-body">
-                            <h4 class="card-tittle">生傳系畢業製作</h4>
-                            <p class="card-text">生傳系第一屆畢業製作，團隊預計在4/30~5/2於花博策展</p>
-                            <a href="http://www.bicd.ntu.edu.tw/" class="btn btn-primary mybtn">看更多</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="w3-card mycard">
-                        <img class="card-img-top" src="assets/ds.PNG">
-                        <div class="card-body">
-                            <h4 class="card-tittle">台大創新設計學院</h4>
-                            <p class="card-text">從學員到加入課程團隊，參與活動並實踐USR，目前為D-Music助教</p>
-                            <a href="https://dschool.ntu.edu.tw/" class="btn btn-primary mybtn">看更多</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="w3-card mycard">
-                        <img class="card-img-top" src="assets/team3.png">
-                        <div class="card-body">
-                            <h4 class="card-tittle">敬請期待</h4>
-                            <p class="card-text">To be continued.<br><br> </p>
-                            <a type="button" href="#" class="btn btn-primary mybtn" style="opacity: 0.6;cursor:default" disabled>看更多?</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+        
 
         <!-- Contact section -->
         <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contactme">
@@ -587,7 +713,7 @@
 
         <!-- Footer -->
         <footer class="w3-center w3-padding-64 w3-opacity w3-hover-opacity-off" style="position: relative;bottom: -50px;">
-            <a href="#home" class="w3-button w3-light-grey js-scroll-trigger"><i class="fa fa-arrow-up w3-margin-right "></i>To the top</a>
+            <a href="#home" id="footer-btn" class="w3-button w3-light-grey js-scroll-trigger"><i class="fa fa-arrow-up w3-margin-right "></i>To the top</a>
             <div class="w3-xlarge w3-section" >
                 <a href="https://www.facebook.com/profile.php?id=100001526396257" target="_blank" ><i class="fab fa-facebook-f w3-hover-opacity " style="width: 30px;color: aqua;"></i></a>
                 <a href="https://www.instagram.com/kev310505/"  target="_blank"><i class="fab fa-instagram w3-hover-opacity" style="width: 30px;color: aqua;"></i></a>
@@ -727,6 +853,14 @@
   };
   xhr.send(data);
 }
+</script>
+    
+<script>
+    $("#fileRequest").click(function() { 
+    // // hope the server sets Content-Disposition: attachment! 
+    window.location = 'portfolio.pdf'; 
+}); 
+    
 </script>
 
 
