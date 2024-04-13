@@ -1191,12 +1191,12 @@ body {
 
         .colorchange{
             filter: grayscale(100%);
-            opacity：0.4;
+            opacity:0.4;
         }
         
         .colorchange:hover{
             filter: none;
-            opacity：1;
+            opacity:1;
         }
 
 .changeopc:hover {
@@ -1510,6 +1510,30 @@ body {
      
         }
 
+        .w3-dropdown-content .nav-item {
+            height: 5vh;
+            transition: all 0.6s ease;
+
+        }
+
+        .nav-item:hover a {
+            text-decoration: none;
+        }
+
+        .w3-dropdown-hover:hover a {
+            text-decoration: none;
+        }
+
+        .w3-dropdown-content .nav-item:hover a {
+            text-decoration: none;
+        }
+
+        .w3-dropdown-content .nav-item a {
+            height: 5vh;
+            padding: 0;
+            margin: 0;
+            line-height: 10pt;
+        }
 
 
 /* When the body has the loading class, we turn
