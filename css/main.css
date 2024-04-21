@@ -201,6 +201,13 @@ h5 {
     min-height: 400px;
 }
 
+@media (max-width: 768px) { 
+    .bgimg-2 {
+        min-height: 320px !important;
+        max-height: 320px !important;
+    }
+}
+
 /* Third image (Contact) */
 .bgimg-3 {
     min-height: 400px;
@@ -541,6 +548,34 @@ hr.light-100 {
     font-size: 40px !important;
     font-weight: 600;
     box-shadow: none !important;
+}
+
+@media (max-width: 768px) { 
+    .bgimg-2 span {
+        font-size: 36px !important;
+} 
+
+
+
+.font-weight-bold {
+    font-size: 32px !important;
+}
+
+.mx-auto iframe {
+    max-height: 202px !important;
+
+}
+
+}
+
+@media (max-width: 376px) { 
+    .bgimg-2 span {
+        font-size: 30px !important;
+} 
+}
+
+.mx-auto iframe {
+    max-width: 100%
 }
 
 .meimg {
